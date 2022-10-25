@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografia - Cifra de Cesar e Base64</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <form class="forms" name="formulario">
+
+                <div class="mensagem">
+                    <input type="text" name="texto" id="texto" class="inputTexto"
+                        placeholder="Digite a sua mensagem neste campo" size="40px" />
+                </div>
+
+                <div class="opcao">
+                    <select name="escolhaMetodo" class="escolhaMetodo" id="opcaoMetodo" required>
+                        <option value="semValor" id="semValor" disabled selected>Método de codificação</option>
+                        <option value="cifraCesar" id="cifraCesar">Cifra de César</option>
+                        <option value="Base64" id="base64">Base64</option>
+                    </select>
+                </div>
+
+                <div class="incremento" style="display: none" id="valorIncremento">
+                    <p>Incremento: </p>
+                    <input type="number" class="inputIncremento" id="numIncrementos" default="0" min="1" max="26"
+                        value="1" maxlength="2" size="4" />
+                </div>
+
+                <div class="codeDecode">
+                    <input type="radio" name="codificar" id="codificar" class="btnCodeDecode" value="codificar"
+                        required />
+                    <label for="codificar">Codificar</label>
+                    <input type="radio" name="codificar" id="decodificar" class="btnCodeDecode" value="decodificar"
+                        required />
+                    <label for="decodificar">Decodificar</label>
+                </div>
+                <div class="btn">
+                    <button id="btnIniciar">Iniciar a criptografia</button>
+                </div>
+
+                <div class="saida">
+                    <textarea disabled class="areaSaida" id="saidaTexto"
+                        placeholder="Sua mensagem codificada irá aparecer neste campo!"></textarea>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

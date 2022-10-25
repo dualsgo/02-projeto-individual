@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace, Courier, monospace;
+}
+
+body {
+    background: url(/img/giphy.gif);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 10px;
+    background: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+}
+
+@media (max-width: 481px) {
+    .container {
+        width: 70%;
+        justify-content: center;
+        align-items: center
+    }
+}
+
+p {
+    font-size: 25px;
+}
+
+.mensagem,
+.opcao,
+.incremento,
+.codeDecode,
+.btn,
+.saida {
+    margin: 15px;
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.inputIncremento {
+    width: 5px height: 5px;
+}
+
+.incremento {
+    display: flex;
+    flex-direction: column;
+}
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    padding: 5px;
+    text-align: center;
+}
+
+.btnCodeDecode {
+    margin: 10px;
+}
+
+label {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+textarea {
+    width: 250px;
+    height: 90px;
+    text-align: center;
+    padding: 20px -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+textarea::placeholder {
+    padding: 20px
+}
+
+#btnIniciar {
+    text-align: center;
+    padding: 5px;
+}
