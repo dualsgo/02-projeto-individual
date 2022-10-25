@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url(/img/giphy.gif);
+    background: url(img/giphy.gif);
     background-size: cover;
     background-attachment: fixed;
     display: flex;
