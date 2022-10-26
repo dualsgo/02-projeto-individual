@@ -27,15 +27,12 @@ body {
 
 @media (max-width: 481px) {
     .container {
-        width: 70%;
+        width: 100%;
         justify-content: center;
         align-items: center
     }
 }
 
-p {
-    font-size: 25px;
-}
 
 .mensagem,
 .opcao,
